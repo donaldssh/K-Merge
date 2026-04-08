@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="KK-Merge: Online Continual Merging of Adapters for On-device Large Language Models">
+  <meta property="og:title" content="K-Merge"/>
+  <meta property="og:description" content="We propose a data-free and efficient method for on-device online continual merging of adapters, enabling integration of new tasks while preserving performance on previous tasks, all within the limited storage constraints of mobile environments."/>
+  <meta property="og:url" content="donaldssh.github.io/K-Merge"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="images/teaser.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="K-Merge: Online Continual Merging of Adapters for On-device Large Language Models">
+  <meta name="twitter:description" content="We propose a data-free and efficient method for on-device online continual merging of adapters, enabling integration of new tasks while preserving performance on previous tasks, all within the limited storage constraints of mobile environments.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="images/teaser.jpg">
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="multi-task learning, generative models, LLM Efficiency, NLP in resource-constrained settings, efficient models, text-to-text generation, fine-tuning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>K-Merge</title>
+  <!-- <link rel="icon" type="image/x-icon" href="images/icon.jpg"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      { left: '$$',  right: '$$',  display: true  },
+      { left: '$',   right: '$',   display: false },
+      { left: '\\[', right: '\\]', display: true  },
+      { left: '\\(', right: '\\)', display: false }
+    ]
+  })">
+</script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">K-Merge: Online Continual Merging of Adapters for On-device Large Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="https://donaldssh.github.io/" target="_blank">Donald Shenaj</a><sup>1,2,3</sup>&nbsp;&nbsp;</span>
+              <span class="author-block"><a href="https://ondrejbohdal.github.io/" target="_blank">Ondrej Bohdal</a><sup>1</sup>&nbsp;&nbsp;</span>
+              <span class="author-block"><a href="https://tahaceritli.github.io/" target="_blank">Taha Ceritli</a><sup>1</sup>&nbsp;&nbsp;</span>
+              <span class="author-block"><a href="https://openreview.net/profile?id=%7EMete_Ozay3" target="_blank">Mete Ozay</a><sup>1</sup>&nbsp;&nbsp;</span>
+              <span class="author-block"><a href="https://medialab.dei.unipd.it/members/pietro-zanuttigh/" target="_blank">Pietro Zanuttigh</a><sup>3</sup>&nbsp;&nbsp;</span>
+              <span class="author-block"><a href="https://umbertomichieli.github.io/" target="_blank">Umberto Michieli</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>Samsung R&D Institute UK&nbsp;&nbsp; 
+                <sup>2</sup>University of Pisa&nbsp;&nbsp; 
+                <sup>3</sup>University of Padova&nbsp;&nbsp; 
+                <br><b>ACL 2026 (main)</b>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2510.13537" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+                    <!-- Supplementary PDF link
+                    <span class="link-block">
+                      <a href="pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/donaldssh/K-Merge" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2510.13537" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="images/teaser.jpg" alt="Teaser" style="display: block; margin: 0 auto;"/>
+      <h2 class="subtitle has-text-justified">
+        Online continual merging of adapters for on-device LLMs. Each adapter corresponds to a specific task $\tau_t$ (e.g., a specific problem type in a selected language). The objective is to increase the LLM capabilities over time without storing all adapters, but rather using a budget of $K$ adapters (e.g., $K\!=\!4$ here). The key steps are:
+      1) The device downloads new adapters over time. 
+      2) The system selects the most similar stored adapter to the new one. 
+      3) The system updates the selected stored adapter by merging it with the new adapter.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            On-device deployment of Large Language Models (LLMs) frequently leverages Low-Rank Adapters (LoRAs) to support diverse downstream tasks under tight resource constraints. To address the limited storage capacity of mobile devices, recent works have explored model merging techniques to fuse multiple LoRAs into a single one. In practice, however, LoRAs are often delivered incrementally, as users request support for new tasks (e.g., novel problem types or languages). This scenario introduces a new challenge: on-device online continual merging, where the objective is to incorporate new LoRAs while preserving the performance on previously supported tasks. In this paper, we propose a data-free and computationally efficient strategy for selecting and merging LoRAs when a new one becomes available, assuming the device can store only a limited number of adapters. Extensive experiments across real-world tasks demonstrate the superiority of our approach compared to alternative strategies while adhering to the storage budget and compute limitations of on-device settings. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+<pre><code>
+@inproceedings{shenaj2026k,
+  title={K-Merge: Online Continual Merging of Adapters for On-device Large Language Models},
+  author={Shenaj, Donald and Bohdal, Ondrej and Ceritli, Taha and Ozay, Mete and Zanuttigh, Pietro and Michieli, Umberto},
+  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL),
+  year={2026}
+}
+</code></pre>
+</div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
