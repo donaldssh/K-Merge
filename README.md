@@ -14,7 +14,7 @@
 <sup>1</sup> Samsung R&D Institute UK &nbsp; <sup>2</sup> University of Pisa &nbsp;  <sup>3</sup> University of Padova
 
 
-**ACL 2026 (main)**
+**ACL 2026 (main, oral)**
 
 [![website](https://img.shields.io/badge/Project-Page-green)](https://donaldssh.github.io/K-Merge)
 [![arXiv](https://img.shields.io/badge/arXiv-2510.13537-red)](https://arxiv.org/abs/2510.13537)
